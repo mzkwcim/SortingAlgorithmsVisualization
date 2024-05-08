@@ -7,7 +7,7 @@ class InsertionSort:
         self.arr = arr
         self.fig, self.ax = plt.subplots()
         self.bar_rects = self.ax.bar(range(len(arr)), arr, align="edge")
-        self.animation = animation.FuncAnimation(self.fig, self.update_fig, frames=self.insertion_sort(), fargs=(self.bar_rects,), repeat=False,  interval=25)
+        self.animation = animation.FuncAnimation(self.fig, self.update_fig, frames=self.insertion_sort(), fargs=(self.bar_rects,), repeat=False,  interval=10)
 
     def insertion_sort(self):
         for i in range(1, len(self.arr)):

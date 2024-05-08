@@ -6,7 +6,7 @@ class HeapSort:
         self.arr = arr
         self.fig, self.ax = plt.subplots()
         self.bar_rects = self.ax.bar(range(len(arr)), arr, align="edge")
-        self.animation = animation.FuncAnimation(self.fig, self.update_fig, frames=self.heap_sort(), fargs=(self.bar_rects,), repeat=False, interval=25)
+        self.animation = animation.FuncAnimation(self.fig, self.update_fig, frames=self.heap_sort(), fargs=(self.bar_rects,), repeat=False, interval=10)
 
     def heap_sort(self):
         def heapify(arr, n, i):
